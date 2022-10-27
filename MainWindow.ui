@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LabelMakerWindow</class>
+ <widget class="QMainWindow" name="LabelMakerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>435</width>
+    <height>708</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LabelMaker</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="5" column="0">
+       <widget class="QLineEdit" name="NumberOfSubjectsText"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="SponsorNameText"/>
+      </item>
+      <item row="18" column="0">
+       <widget class="QLineEdit" name="PKTimeText"/>
+      </item>
+      <item row="13" column="0">
+       <widget class="QListWidget" name="DoseDayList">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QComboBox" name="SequenceComboBox">
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLineEdit" name="DoseDayText"/>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <widget class="QLabel" name="SequenceLabel">
+        <property name="text">
+         <string>투약군(R100번대 시작 시 1 / R100, R200시작 시 2)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="QPushButton" name="DoseDayDeleteButton">
+        <property name="text">
+         <string>삭제</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="0">
+       <widget class="QListWidget" name="PKTimeList"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="StudyNameLabel">
+        <property name="text">
+         <string>과제명</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="NumberOfSubjectsLabel">
+        <property name="text">
+         <string>대상자 수(숫자만 입력)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="1">
+       <widget class="QPushButton" name="PKTimeInsertButton">
+        <property name="text">
+         <string>추가</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="PeriodLabel">
+        <property name="text">
+         <string>투약 기수(2기 시험이면 2, 4기시험이면 4)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="0">
+       <widget class="QLabel" name="PKTimeLabel">
+        <property name="text">
+         <string>채혈시간</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="DoseDayLabel">
+        <property name="text">
+         <string>투약일(날짜순 입력 20xx-xx-xx)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLineEdit" name="StudyNameText"/>
+      </item>
+      <item row="9" column="0">
+       <widget class="QComboBox" name="PeriodComboBox">
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="21" column="0">
+       <widget class="QPushButton" name="MAKE">
+        <property name="text">
+         <string>생성</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="QPushButton" name="DoseDayClearButton">
+        <property name="text">
+         <string>초기화</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="1">
+       <widget class="QPushButton" name="PKTimeDeleteButton">
+        <property name="text">
+         <string>삭제</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="1">
+       <widget class="QPushButton" name="PKTImeClearButton">
+        <property name="text">
+         <string>초기화</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="SponsorNameLabel">
+        <property name="text">
+         <string>의뢰사</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QPushButton" name="DoseDayInsertButton">
+        <property name="text">
+         <string>추가</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>SponsorNameText</tabstop>
+  <tabstop>StudyNameText</tabstop>
+  <tabstop>NumberOfSubjectsText</tabstop>
+  <tabstop>SequenceComboBox</tabstop>
+  <tabstop>PeriodComboBox</tabstop>
+  <tabstop>PKTimeText</tabstop>
+  <tabstop>MAKE</tabstop>
+  <tabstop>PKTImeClearButton</tabstop>
+  <tabstop>PKTimeDeleteButton</tabstop>
+  <tabstop>PKTimeInsertButton</tabstop>
+  <tabstop>PKTimeList</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
