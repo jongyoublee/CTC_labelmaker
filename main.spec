@@ -5,7 +5,6 @@ block_cipher = None
 
 ui = [('MainWindow.ui', '.')]
 
-
 a = Analysis(
     ['main.py'],
     pathex=[],

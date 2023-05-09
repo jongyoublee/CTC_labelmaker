@@ -104,7 +104,7 @@ class WindowClass(QMainWindow, form_class):
         print(dosedays)
         try:
             myWorkBook = LabelMaker(sponsor, studyName, int(subjects), int(sequence), int(period), dosedays, timetable, excelfile)
-            #myWorkBook.makeTubeLabel()
+            myWorkBook.makeTubeLabel()
             myWorkBook.makeBoxLabel()
 
             myWorkBook.saveExcelFile()
